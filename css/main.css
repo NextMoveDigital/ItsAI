@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  color: #ffffff; /* White font color */
+  font-size: 12px;
+  background-color: #212121; /* Background color */
+  font-weight: 400;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif; /* Font family */
+}
+
+a {
+  text-decoration: underline;
+  transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  cursor: pointer;
+  color: #ffffff; /* White font color */
+}
+
+a:not([href]) {
+  transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #ffffff; /* White font color */
+}
+
+a:hover {
+  text-decoration: none;
+  color: #A6FF7E;
+}
+
+button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #4CAF50; /* Default background color */
+  color: white; /* Text color */
+  padding: 0; /* Remove default padding */
+  text-align: center; /* Text alignment */
+  text-decoration: none; /* Remove default underline */
+  display: inline-flex; /* Display as inline-flex to use flexbox */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  font-size: 16px; /* Font size */
+  margin: 4px 2px; /* Margin */
+  cursor: pointer; /* Cursor style */
+  border-radius: 8px; /* Rounded corners */
+  border: none; /* Remove border */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  width: 200px; /* Set width */
+  height: 50px; /* Set height */
+  line-height: 50px; /* Set line height equal to height */
+}
+
+.content {
+  padding: 25px 24px;
+}
+
+/* Ensures the banner does not exceed the width of its container */
+.banner {
+  max-width: 100%; 
+  overflow: hidden; /* Prevents the image from overflowing its container */
+}
+
+/* Makes the image take up 100% of the width of its container */
+.responsive-image {
+  width: 100%; 
+  height: auto; /* Allows the height to adjust automatically according to the width */
+  display: block; /* Ensures the image behaves as a block element */
+}
+
+/* Adjust the height for larger screen sizes */
+@media screen and (min-width: 568px) {
+  .banner {
+    max-height: 30%; /* Adjust the desired height percentage for larger screens */
+  }
+}
+
+
+.terms-text {
+  padding: 12px 16px 0;
+  margin: 0;
+}
+
+.terms-text p {
+  margin-bottom: 18px;
+  margin-top: 0;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.terms-text p:last-child {
+  margin-bottom: 0;
+}
+
+.button-wrapper {
+  position: relative;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+}
+
+.logo {
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+  z-index: 1; 
+}
+
+.logo img {
+  width: 30px; 
+  height: auto;
+}
+.button-wrapper .join-button {
+  background-color: #A6FF7E; /* Button color */
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  color: #000000; /* Dark font color */
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 22px;
+  text-transform: capitalize;
+  line-height: 80px;
+  height: 82px !important;
+  border: 1px solid #A6FF7E; /* Button color */
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.price-sub{
+  font-family: 'Plus Jakarta Sans', bold;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  font-weight: 300;
+  text-align: center;
+  font-size: 11px;
+  line-height: 14px;
+  color: #A9A9A9
+}
+
+.btn-backwards {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #ffffff; /* White font color */
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  text-decoration: underline;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 36px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-backwards:active {
+  text-decoration: none;
+  color: #A6FF7E;
+}
+
+.btn-backwards:focus {
+  text-decoration: none;
+  color: #A6FF7E;
+}
+
+footer {
+  margin: 0;
+  padding: 35px 12px 0;
+}
+
+.footer-menu-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-menu a {
+  font-size: 14px;
+  display: block;
+  padding-left: 13px;
+  padding-right: 13px;
+  line-height: 40px;
+  position: relative;
+  text-decoration: underline;
+  color: #CACACA;
+  transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+}
+
+.footer-menu a + a:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 1px;
+  height: 22px;
+  background-color: #CACACA;
+}
+
+.footer-menu {
+  font-size: 10px;
+  margin: 0;
+  padding: 0 24px;
+  position: relative;
+}
+
+.footer-menu a:active, .footer-menu a:focus, .footer-menu a:focus-visible {
+  color: #CACACA;
+  text-decoration: none;
+}
+
+.footer-menu-row:first-child {
+  margin-bottom: 5px;
+}
+
+.footer-menu a:hover, .footer-menu a:focus, .footer-menu a:active {
+  text-decoration: none;
+}
+.copyright {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  color: #CACACA;
+  font-weight: 400;
+  font-size: 11px;
+  padding-bottom: 3px;
+  margin-top: 25px;
+}
+
