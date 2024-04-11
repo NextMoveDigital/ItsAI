@@ -166,7 +166,7 @@ button {
 
 footer {
   margin: 0;
-  padding: 35px 12px 0;
+  padding: 55px 12px 0;
 }
 
 .footer-menu-row {
@@ -178,8 +178,8 @@ footer {
 .footer-menu a {
   font-size: 12px;
   display: block;
-  padding-left: 13px;
-  padding-right: 13px;
+  padding-left: 7px;
+  padding-right: 7px;
   line-height: 40px;
   position: relative;
   text-decoration: underline;
