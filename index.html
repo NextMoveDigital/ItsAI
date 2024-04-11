@@ -9,8 +9,7 @@
     <meta name="author" content="ItsAi">
     <meta name="copyright" content="Next Move Digital">
     <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:site_name" content="ItsAi Store" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://itsai-online.com" />
@@ -55,6 +54,7 @@
   href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
 />
 </head>
+
 <body>
      <!-- logo -->
             <div class="logo">
@@ -62,11 +62,19 @@
             </div>
     <main class="page-container">
  <!-- %campaignImageBannerUrl% -->
-        <div class="banner">
-          <a href="https://itsai-online.com/">
-              <img src="https://i.ibb.co/G010yXf/banner.jpg" alt="banner" border="0" class="responsive-image" />
-          </a>
-        </div>
+      <div class="banner">
+        <a href="https://itsai-online.com/">
+            <picture>
+                <!-- For desktop -->
+                <source media="(min-width: 768px)" srcset="https://i.ibb.co/desktop-banner.jpg">
+                <!-- For mobile -->
+                <source media="(max-width: 767px)" srcset="https://i.ibb.co/mobile-banner.jpg">
+                <!-- Fallback image for older browsers -->
+                <img src="https://i.ibb.co/desktop-banner.jpg" alt="Banner" class="responsive-image">
+            </picture>
+        </a>
+      </div>
+      <!-- %endCampaignImageBannerUrl
       </div>
     <div class="content"> 
         <!-- btn -->
@@ -91,11 +99,11 @@
                 <footer>
                     <div class="footer-menu">
                         <div class="footer-menu-row">
-                            <a href="https://nextmovedigital.github.io/ItsAI/TC.html" class="layer pinklink">Όροι και προϋποθέσεις</a>
+                            <a href="https://itsai-online.com/terms-and-conditions" class="layer pinklink">Όροι και προϋποθέσεις</a>
                         </div>
                         <div class="footer-menu-row">
-                            <a href="https://nextmovedigital.github.io/ItsAI/FAQ.html" class="footer-link">Συχνές ερωτήσεις</a>
-                            <a href="https://nextmovedigital.github.io/ItsAI/ContactUs.html" class="footer-link">Επικοινωνήστε μαζί μας</a>
+                            <a href="https://itsai-online.com/faq" class="footer-link">Συχνές ερωτήσεις</a>
+                            <a href="https://itsai-online.com/contact-us" class="footer-link">Επικοινωνήστε μαζί μας</a>
                 </div>
             </div>
                     </div>
